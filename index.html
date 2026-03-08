@@ -1,5 +1,4 @@
-
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,37 +18,14 @@
             height: 100%;
             border: none;
         }
-        .fallback {
-            display: none;
-            padding: 20px;
-            text-align: center;
-            margin-top: 50px;
-        }
-        .fallback a {
-            background-color: #2563eb;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
     </style>
 </head>
 <body>
-
     <!-- 
       NOTE: Google Apps Script Web Apps often block iframes with 'x-frame-options: SAMEORIGIN'.
       If the iframe below shows a "refused to connect" error, you cannot embed it directly.
       In that case, users must use the direct link.
     -->
     <iframe src="https://script.google.com/macros/s/AKfycbwFKSwDCAA9RHQ-wPpGhmUMOsEZQYe9c-5kDn1oRi_MdxvKIem907BCC7a0Fu78e3K-/exec" title="Keren Olam Hatorah"></iframe>
-
-    <script>
-        // Simple check: if iframe fails to load or is blocked, show fallback
-        // (Note: Cross-origin restrictions make detecting iframe errors hard, so this is a basic fallback UI)
-        window.addEventListener('blur', function() {
-            document.getElementById('fallbackMsg').style.display = 'block';
-        });
-    </script>
 </body>
 </html>
